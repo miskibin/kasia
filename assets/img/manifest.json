@@ -9,32 +9,32 @@
    },
    {
     "src": "r02",
-    "w": 1021,
-    "h": 523,
+    "w": 2775,
+    "h": 1421,
     "caption": "Foyer"
    },
    {
     "src": "r03",
-    "w": 1088,
-    "h": 522,
+    "w": 2775,
+    "h": 1331,
     "caption": "Sala widowiskowa"
    },
    {
     "src": "r04",
-    "w": 1062,
-    "h": 705,
+    "w": 3000,
+    "h": 1992,
     "caption": "Sala konferencyjna"
    },
    {
     "src": "r05",
-    "w": 1420,
-    "h": 635,
+    "w": 2775,
+    "h": 1239,
     "caption": "Restauracja"
    },
    {
     "src": "r06",
-    "w": 883,
-    "h": 624,
+    "w": 3000,
+    "h": 2120,
     "caption": "Aksonometria"
    },
    {
@@ -72,20 +72,20 @@
    },
    {
     "src": "r02",
-    "w": 1101,
-    "h": 615,
+    "w": 3000,
+    "h": 1676,
     "caption": "Bryła w kontekście kwartału"
    },
    {
     "src": "r03",
-    "w": 765,
-    "h": 519,
+    "w": 3000,
+    "h": 2035,
     "caption": "Arkady parteru"
    },
    {
     "src": "r04",
-    "w": 1101,
-    "h": 615,
+    "w": 3000,
+    "h": 1676,
     "caption": "Fasada — detal"
    },
    {
@@ -96,20 +96,20 @@
    },
    {
     "src": "r06",
-    "w": 1101,
-    "h": 615,
+    "w": 3000,
+    "h": 1676,
     "caption": "Subtrakcja bryły — wejście do wnętrza kwartału"
    },
    {
     "src": "r07",
-    "w": 1489,
-    "h": 1053,
+    "w": 3000,
+    "h": 2122,
     "caption": "Rysunek koncepcyjny"
    },
    {
     "src": "r08",
-    "w": 820,
-    "h": 615,
+    "w": 3000,
+    "h": 2250,
     "caption": "Model roboczy"
    },
    {
@@ -151,56 +151,56 @@
   "images": [
    {
     "src": "r01",
-    "w": 739,
-    "h": 471,
+    "w": 2775,
+    "h": 1768,
     "caption": "Pomost — aktywna rekreacja"
    },
    {
     "src": "r02",
-    "w": 740,
-    "h": 467,
+    "w": 2775,
+    "h": 1751,
     "caption": "Wieża widokowa w koronach drzew"
    },
    {
     "src": "r03",
-    "w": 740,
-    "h": 467,
+    "w": 2775,
+    "h": 1751,
     "caption": "Pawilon na wyniesionej ścieżce"
    },
    {
     "src": "r04",
-    "w": 740,
-    "h": 406,
+    "w": 2775,
+    "h": 1522,
     "caption": "Ścieżka nad lustrem wody"
    },
    {
     "src": "r05",
-    "w": 740,
-    "h": 446,
+    "w": 2775,
+    "h": 1672,
     "caption": "Pawilony nad nabrzeżem"
    },
    {
     "src": "r06",
-    "w": 740,
-    "h": 446,
+    "w": 2775,
+    "h": 1672,
     "caption": "Wyspa Miłości — pergola"
    },
    {
     "src": "r07",
-    "w": 800,
-    "h": 571,
+    "w": 3000,
+    "h": 2141,
     "caption": "Przystań"
    },
    {
     "src": "r08",
-    "w": 800,
-    "h": 474,
+    "w": 3000,
+    "h": 1778,
     "caption": "Amfiteatr"
    },
    {
     "src": "r09",
-    "w": 800,
-    "h": 599,
+    "w": 3000,
+    "h": 2246,
     "caption": "Kawiarnia — wnętrza"
    }
   ],
@@ -237,32 +237,32 @@
    },
    {
     "src": "r02",
-    "w": 794,
-    "h": 447,
+    "w": 3000,
+    "h": 1689,
     "caption": "Budynek wspólny"
    },
    {
     "src": "r03",
-    "w": 845,
-    "h": 475,
+    "w": 3000,
+    "h": 1686,
     "caption": "Dom mieszkalny"
    },
    {
     "src": "r04",
-    "w": 845,
-    "h": 475,
+    "w": 3000,
+    "h": 1686,
     "caption": "Dom mieszkalny — widok od ścieżki"
    },
    {
     "src": "r05",
-    "w": 794,
-    "h": 447,
+    "w": 3000,
+    "h": 1689,
     "caption": "Budynek wspólny — perspektywa"
    },
    {
     "src": "r06",
-    "w": 708,
-    "h": 501,
+    "w": 2832,
+    "h": 2004,
     "caption": "Aksonometria budynku wspólnego"
    },
    {
@@ -359,20 +359,20 @@
   "images": [
    {
     "src": "r01",
-    "w": 1036,
-    "h": 732,
+    "w": 3000,
+    "h": 2120,
     "caption": "Widok od ulicy"
    },
    {
     "src": "r02",
-    "w": 1009,
-    "h": 708,
+    "w": 3000,
+    "h": 2105,
     "caption": "Perspektywa narożnika"
    },
    {
     "src": "r03",
-    "w": 1009,
-    "h": 708,
+    "w": 3000,
+    "h": 2105,
     "caption": "Perspektywa"
    },
    {
@@ -404,26 +404,26 @@
   "images": [
    {
     "src": "r01",
-    "w": 872,
-    "h": 427,
+    "w": 3000,
+    "h": 1469,
     "caption": "Widok z lotu ptaka"
    },
    {
     "src": "r02",
-    "w": 872,
-    "h": 427,
+    "w": 3000,
+    "h": 1469,
     "caption": "Widok od ulicy"
    },
    {
     "src": "r03",
-    "w": 872,
-    "h": 427,
+    "w": 3000,
+    "h": 1469,
     "caption": "Widok od strony zieleni"
    },
    {
     "src": "r04",
-    "w": 872,
-    "h": 427,
+    "w": 3000,
+    "h": 1469,
     "caption": "Perspektywa"
    },
    {
@@ -489,26 +489,26 @@
   "images": [
    {
     "src": "r01",
-    "w": 1493,
-    "h": 853,
+    "w": 3000,
+    "h": 1714,
     "caption": "Widok od ogrodu"
    },
    {
     "src": "r02",
-    "w": 1490,
-    "h": 861,
+    "w": 3000,
+    "h": 1734,
     "caption": "Bryła"
    },
    {
     "src": "r03",
-    "w": 1388,
-    "h": 803,
+    "w": 3000,
+    "h": 1736,
     "caption": "Widok z lotu ptaka"
    },
    {
     "src": "r04",
-    "w": 1468,
-    "h": 859,
+    "w": 3000,
+    "h": 1755,
     "caption": "Biblioteka — klatka schodowa"
    }
   ],
@@ -539,20 +539,20 @@
   "images": [
    {
     "src": "r01",
-    "w": 800,
-    "h": 449,
+    "w": 3000,
+    "h": 1684,
     "caption": "Wnętrze — strefa dzienna"
    },
    {
     "src": "r02",
-    "w": 800,
-    "h": 449,
+    "w": 3000,
+    "h": 1684,
     "caption": "Wnętrze — sypialnia"
    },
    {
     "src": "r03",
-    "w": 800,
-    "h": 449,
+    "w": 3000,
+    "h": 1684,
     "caption": "Łazienka"
    }
   ],
@@ -573,20 +573,20 @@
   "images": [
    {
     "src": "r01",
-    "w": 1593,
-    "h": 884,
+    "w": 3000,
+    "h": 1665,
     "caption": "Domy nad stawem"
    },
    {
     "src": "r02",
-    "w": 1593,
-    "h": 884,
+    "w": 3000,
+    "h": 1665,
     "caption": "Widok z lotu ptaka"
    },
    {
     "src": "r03",
-    "w": 1593,
-    "h": 884,
+    "w": 3000,
+    "h": 1665,
     "caption": "Promenada"
    }
   ],
@@ -607,8 +607,8 @@
   "images": [
    {
     "src": "r01",
-    "w": 1308,
-    "h": 623,
+    "w": 3000,
+    "h": 1429,
     "caption": "Elewacja uzupełnienia pierzei"
    },
    {
@@ -641,20 +641,20 @@
   "images": [
    {
     "src": "r01",
-    "w": 828,
-    "h": 1104,
+    "w": 3000,
+    "h": 4000,
     "caption": "Model — widok z góry"
    },
    {
     "src": "r02",
-    "w": 828,
-    "h": 1104,
+    "w": 3000,
+    "h": 4000,
     "caption": "Model — pierzeja"
    },
    {
     "src": "r03",
-    "w": 828,
-    "h": 1104,
+    "w": 3000,
+    "h": 4000,
     "caption": "Model — perspektywa"
    }
   ],
@@ -675,8 +675,8 @@
   "images": [
    {
     "src": "r01",
-    "w": 1064,
-    "h": 888,
+    "w": 3000,
+    "h": 2504,
     "caption": "Koncepcja na ortofotomapie"
    },
    {
