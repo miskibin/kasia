@@ -13,9 +13,9 @@ S = Path(sys.argv[1]); OUT = Path(sys.argv[2])
 SRC = S / "src/Portfolio archi Katarzyna Socha"; EMB = S / "emb"; TMP = S / "pages"; TMP.mkdir(exist_ok=True)
 
 P = {  # slug: (renders [(embedded-name | (pdf,page,box), caption)], boards (pdf, pages))
- "centrum-sztuki-i-sceny": ([("centrum-003-1202","Wizualizacja zewnętrzna"),("centrum-002-1196","Foyer"),("centrum-002-1194","Sala widowiskowa"),("centrum-002-1198","Sala konferencyjna"),("centrum-002-1200@0.945","Restauracja"),("centrum-003-3512","Aksonometria"),("centrum-001-1189","Rozwinięcie urbanistyczne ulicy Piłsudskiego")],("centrum",[1,2,3])),
+ "centrum-sztuki-i-sceny": ([("centrum-003-1202@0.925,1","Wizualizacja zewnętrzna"),("centrum-002-1196@0.925,1","Foyer"),("centrum-002-1194@0.925,1","Sala widowiskowa"),("centrum-002-1198","Sala konferencyjna"),("centrum-002-1200@0.925,0.945","Restauracja"),("centrum-003-3512","Aksonometria"),("centrum-001-1189","Rozwinięcie urbanistyczne ulicy Piłsudskiego")],("centrum",[1,2,3])),
  "zespol-wielofunkcyjny-plac-jana-pawla-ii": ([("jp2-005-182","Widok z lotu ptaka"),("jp2-003-122","Bryła w kontekście kwartału"),("jp2-004-173","Arkady parteru"),("jp2-003-124","Fasada — detal"),("jp2-003-126","Elewacja"),("jp2-003-123","Subtrakcja bryły — wejście do wnętrza kwartału"),("jp2-002-038","Rysunek koncepcyjny"),("jp2-002-033","Model roboczy"),("jp2-002-040","Szkic koncepcji")],("jp2",[1,2,3,4,5])),
- "wyspa-opatowicka": ([("wyspa-004-180","Pomost — aktywna rekreacja"),("wyspa-002-025","Wieża widokowa w koronach drzew"),("wyspa-002-033","Pawilon na wyniesionej ścieżce"),("wyspa-002-032","Ścieżka nad lustrem wody"),("wyspa-003-064","Pawilony nad nabrzeżem"),("wyspa-003-065","Wyspa Miłości — pergola"),("wyspa-003-152","Przystań"),("wyspa-004-174","Amfiteatr"),("wyspa-004-212","Kawiarnia — wnętrza")],("wyspa",[1,2,3,4])),
+ "wyspa-opatowicka": ([("wyspa-004-180@0.925,1","Pomost — aktywna rekreacja"),("wyspa-002-025@0.925,1","Wieża widokowa w koronach drzew"),("wyspa-002-033@0.925,1","Pawilon na wyniesionej ścieżce"),("wyspa-002-032@0.925,1","Ścieżka nad lustrem wody"),("wyspa-003-064@0.925,1","Pawilony nad nabrzeżem"),("wyspa-003-065@0.925,1","Wyspa Miłości — pergola"),("wyspa-003-152","Przystań"),("wyspa-004-174","Amfiteatr"),("wyspa-004-212","Kawiarnia — wnętrza")],("wyspa",[1,2,3,4])),
  "eco-cohousing": ([("inz-004-018","Widok osiedla z lotu ptaka"),("inz-003-016","Budynek wspólny"),("inz-005-037","Dom mieszkalny"),("inz-005-038","Dom mieszkalny — widok od ścieżki"),("inz-003-015","Budynek wspólny — perspektywa"),("inz-003-010","Aksonometria budynku wspólnego"),("inz-002-002","Projekt zagospodarowania terenu")],("inz",[2,3,4,5])),
  "hala-sportowa-opole": ([(("inz",9,(0.405,0.535,0.735,0.772)),"Wizualizacja wnętrza")],("inz",[9,10])),
  "obiekt-przemyslowy-nysa": ([(("inz",14,(0.062,0.535,0.768,0.842)),"Wizualizacja — strefa biurowa"),(("inz",17,(0.062,0.602,0.772,0.842)),"Wizualizacja — hala produkcyjna")],("inz",[14,15,16,17])),
@@ -64,9 +64,13 @@ for slug, (renders, (pdf, pages)) in P.items():
             pdfn, pn, (x0,y0,x1,y1) = src; pg = page(pdfn, pn)
             im = pg.crop((int(x0*pg.width), int(y0*pg.height), int(x1*pg.width), int(y1*pg.height)))
         else:
-            name, _, keep = src.partition("@")  # "@0.945" keeps the top 94.5% (drops a watermark)
-            im = Image.open(EMB/f"{name}.png").convert("RGB")
-            if keep: im = im.crop((0, 0, im.width, int(im.height*float(keep))))
+            # "name@x1,y1" keeps the left x1 / top y1 fraction (drops corner watermarks)
+            name, _, keep = src.partition("@")
+            up = S / "emb_up" / f"{name}.png"  # Real-ESRGAN version from upscale.py, when present
+            im = Image.open(up if up.exists() else EMB/f"{name}.png").convert("RGB")
+            if keep:
+                kx, ky = (float(v) for v in keep.split(","))
+                im = im.crop((0, 0, int(im.width*kx), int(im.height*ky)))
         r = save(im, OUT/slug/f"r{i:02d}")
         m["images"].append({"src": f"r{i:02d}", "w": im.width, "h": im.height, "caption": cap})
     for j, pn in enumerate(pages, 1):

@@ -3,19 +3,19 @@
   "images": [
    {
     "src": "r01",
-    "w": 2816,
+    "w": 2604,
     "h": 1504,
     "caption": "Wizualizacja zewnętrzna"
    },
    {
     "src": "r02",
-    "w": 1104,
+    "w": 1021,
     "h": 523,
     "caption": "Foyer"
    },
    {
     "src": "r03",
-    "w": 1177,
+    "w": 1088,
     "h": 522,
     "caption": "Sala widowiskowa"
    },
@@ -27,7 +27,7 @@
    },
    {
     "src": "r05",
-    "w": 1536,
+    "w": 1420,
     "h": 635,
     "caption": "Restauracja"
    },
@@ -151,37 +151,37 @@
   "images": [
    {
     "src": "r01",
-    "w": 799,
+    "w": 739,
     "h": 471,
     "caption": "Pomost — aktywna rekreacja"
    },
    {
     "src": "r02",
-    "w": 800,
+    "w": 740,
     "h": 467,
     "caption": "Wieża widokowa w koronach drzew"
    },
    {
     "src": "r03",
-    "w": 800,
+    "w": 740,
     "h": 467,
     "caption": "Pawilon na wyniesionej ścieżce"
    },
    {
     "src": "r04",
-    "w": 800,
+    "w": 740,
     "h": 406,
     "caption": "Ścieżka nad lustrem wody"
    },
    {
     "src": "r05",
-    "w": 800,
+    "w": 740,
     "h": 446,
     "caption": "Pawilony nad nabrzeżem"
    },
    {
     "src": "r06",
-    "w": 800,
+    "w": 740,
     "h": 446,
     "caption": "Wyspa Miłości — pergola"
    },
